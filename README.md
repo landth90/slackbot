@@ -14,10 +14,10 @@ gcloud auth configure-docker
 docker login -u _json_key -p "$(cat keyfile.json)" https://gcr.io
 
 # build image
-docker build --tag gcr.io/freenance-dev/slackbot .
+docker build --tag gcr.io/$PROJECT_ID/slackbot .
 
 # push image
-docker push gcr.io/freenance-dev/slackbot
+docker push gcr.io/$PROJECT_ID/slackbot
 ```
 
 
